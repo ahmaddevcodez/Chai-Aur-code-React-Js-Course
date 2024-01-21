@@ -6,9 +6,12 @@ function App() {
 
   const addValue = () => {
     if (counterValue < 20) {
-      setCounter(counterValue + 1);
+      setCounter((prevCounter) => prevCounter + 1);
+      setCounter((prevCounter) => prevCounter + 1);
+      setCounter((prevCounter) => prevCounter + 1);
+      setCounter((prevCounter) => prevCounter + 1);
     } else {
-      alert("Counter cannot exceed 20");
+      alert(`Counter cannot exceed ${counterValue}`);
     }
   };
 
@@ -16,7 +19,7 @@ function App() {
     if (counterValue > 0) {
       setCounter(counterValue - 1);
     } else {
-      alert("Counter cannot exceed 0");
+      alert("Counter cannot` exceed 0");
     }
   };
 
