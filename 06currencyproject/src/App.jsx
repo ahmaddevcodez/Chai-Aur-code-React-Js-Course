@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Currency Project With Chai </h1>
+      <h1 className="text-3xl">Currency Project With Chai </h1>
     </>
   );
 }
