@@ -1,3 +1,5 @@
 import { useEffect, useState } from "react";
 
-function useCurrenyInfo(curreny) {}
+function useCurrenyInfo(curreny) {
+  useEffect();
+}
