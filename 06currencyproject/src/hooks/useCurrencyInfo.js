@@ -15,5 +15,5 @@ function useCurrencyInfo(currency) {
 
   return data;
 }
-
+console.log("5" - "2");
 export default useCurrencyInfo;
