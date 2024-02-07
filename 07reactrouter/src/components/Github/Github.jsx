@@ -5,13 +5,15 @@ export default function Github() {
   const data = useLoaderData();
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-blue-700 to-indigo-900 min-h-screen text-white p-8">
+    <div className="flex flex-col items-center justify-center bg-white min-h-screen text-gray-900 p-8">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold">Github Profile</h1>
-        <p className="text-lg">Explore information about the user</p>
+        <h1 className="text-4xl font-bold text-gray-900">Github Profile</h1>
+        <p className="text-lg text-gray-600">
+          Explore information about the user
+        </p>
       </div>
 
-      <div className="text-center bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div className="text-center bg-black p-8 rounded-lg shadow-lg text-white">
         <img
           src={data.avatar_url}
           alt="Git Pic"
@@ -19,16 +21,16 @@ export default function Github() {
           width={150}
         />
         <h2 className="text-3xl font-bold mb-2">{data.name}</h2>
-        <p className="text-lg">{data.bio}</p>
+        <p className="text-lg text-white">{data.bio}</p>
 
         <div className="mt-6">
-          <div className="text-2xl font-bold">
+          <div className="text-2xl font-bold text-white">
             Github Followers: {data.followers}
           </div>
-          <div className="text-xl">
+          <div className="text-xl text-white">
             Public Repositories: {data.public_repos}
           </div>
-          <div className="text-xl">
+          <div className="text-xl text-white">
             Location: {data.location || "Not specified"}
           </div>
         </div>
@@ -38,6 +40,6 @@ export default function Github() {
 }
 
 export const githubInfoLoader = async () => {
-  const response = await fetch("https://api.github.com/users/hiteshchoudhary");
+  const response = await fetch("https://api.github.com/users/tahirwaleed399");
   return response.json();
 };

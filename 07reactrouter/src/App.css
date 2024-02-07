@@ -2,3 +2,13 @@
   width: 100vw;
   background-color: red;
 }
+@media only screen and (min-width: 1024px) {
+  .ham {
+    display: none;
+  }
+}
+/* @media only screen and (max-width: 600px) {
+  .ham {
+    display: block;
+  }
+} */
